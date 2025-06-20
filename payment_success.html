@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>결제 완료 - 오늘의 학식</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1c3d5a;
+      padding: 20px 40px;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .back-button {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #3aafa9;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .logo {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .logo img {
+      width: 48px;
+      height: auto;
+    }
+    .main-content {
+      flex: 1;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .main-box {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 26px;
+      color: #1c3d5a;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .success-icon {
+      font-size: 48px;
+      color: #3aafa9;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      background-color: #3aafa9;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #319d94;
+    }
+    footer {
+      background-color: #1c3d5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">← 메인으로</a>
+    <div class="logo">
+      <img src="logo.png" alt="오늘의 학식 로고">
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="main-box">
+      <div class="success-icon">✅</div>
+      <h2>결제가 완료되었습니다!</h2>
+      <p>2025년 6월 17일 식단에 대한 결제가 성공적으로 처리되었습니다.</p>
+      <a href="index.html" class="btn">메인으로</a>
+      <a href="review_loggedin.html" class="btn">후기 남기기</a>
+    </div>
+  </div>
+  <footer>
+    ⓒ 오늘의 학식 - 정세아
+  </footer>
+</body>
+</html>

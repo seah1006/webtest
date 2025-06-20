@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>후기 목록 - 오늘의 학식</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-color: #1c3d5a;
+      padding: 20px 40px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo img {
+      width: 48px;
+      height: auto;
+    }
+    .back-button {
+      background-color: #3aafa9;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .main-content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 24px;
+      color: #1c3d5a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .review {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    .review:last-child {
+      border-bottom: none;
+    }
+    .review-date {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+    .review-stars {
+      color: gold;
+      margin-bottom: 6px;
+    }
+    .review-content {
+      font-size: 15px;
+    }
+    footer {
+      background-color: #1c3d5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">← 메인으로</a>
+    <div class="logo">
+      <img src="logo.png" alt="오늘의 학식 로고">
+    </div>
+  </header>
+  <div class="main-content">
+    <h2>🍽️ 이용자 후기 목록</h2>
+
+    <div class="review">
+      <div class="review-date">2025년 6월 17일</div>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-content">돈까스가 바삭하고 양도 많았어요! 스프도 맛있었습니다.</div>
+    </div>
+
+    <div class="review">
+      <div class="review-date">2025년 6월 16일</div>
+      <div class="review-stars">★★★☆☆</div>
+      <div class="review-content">제육은 괜찮았지만 밥이 조금 질었어요. 그래도 먹을만했습니다.</div>
+    </div>
+
+    <div class="review">
+      <div class="review-date">2025년 6월 15일</div>
+      <div class="review-stars">★★★★☆</div>
+      <div class="review-content">샐러드 신선하고 조화가 좋았어요. 다시 먹고 싶네요.</div>
+    </div>
+
+  </div>
+  <footer>
+    ⒲ 오늘의 학식 - 정세아
+  </footer>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>오늘의 학식</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #ffffff);
+      color: #333;
+      padding-top: 100px;
+    }
+    header {
+      background-color: #1c3d5a;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      position: relative;
+    }
+    .menu-toggle input[type=checkbox] {
+      display: none;
+    }
+    .menu-toggle label {
+      background-color: #3aafa9;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      z-index: 2;
+      position: relative;
+    }
+    .menu-toggle label:hover {
+      background-color: #338e89;
+    }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 10px;
+      padding: 10px 20px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+    }
+    .nav-links a {
+      display: block;
+      padding: 8px 0;
+      color: #1c3d5a;
+      text-decoration: none;
+    }
+    .nav-links a:hover {
+      background-color: #f5f5f5;
+      border-radius: 6px;
+      padding-left: 5px;
+    }
+    .menu-toggle input:checked ~ .nav-links {
+      display: flex;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      width: 48px;
+      height: auto;
+    }
+    .main-content {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    h2 {
+      font-size: 28px;
+      color: #1c3d5a;
+      margin-bottom: 30px;
+    }
+    .menu-box {
+      background: #ffffff;
+      border-radius: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      padding: 40px;
+    }
+    .date-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      gap: 20px;
+    }
+    .date-nav a {
+      background-color: #3aafa9;
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .menu-box p {
+      margin: 12px 0;
+      font-size: 16px;
+    }
+    .pay-button {
+      display: inline-block;
+      margin-top: 35px;
+      background-color: #f76c6c;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .pay-button:hover {
+      background-color: #dd5858;
+    }
+    footer {
+      background-color: #1c3d5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 80px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle">
+      <input type="checkbox" id="toggleNav">
+      <label for="toggleNav">☰ 메뉴</label>
+      <div class="nav-links">
+        <a href="index.html">메인</a>
+        <a href="signup.html">회원가입</a>
+        <a href="week.html">주간 식단표</a>
+        <a href="review.html">리뷰 작성</a>
+        <a href="review_list.html">식단 리뷰 모음</a>
+        <a href="payment.html">결제하기</a>
+        <a href="login.html">로그인</a>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="logo.png" alt="오늘의 학식 로고">
+    </div>
+  </header>
+  <div class="main-content">
+    <h2>🍱 오늘의 식단 🍲</h2>
+    <div class="menu-box">
+      <div class="date-nav">
+        <a href="index-0616.html">&lt; 이전</a>
+        <strong>2025년 06월 17일 (화)</strong>
+        <span style="display:inline-block;width:80px;"></span>
+      </div>
+      <p><strong>점심:</strong> 제육볶음, 미역국, 김치, 콩나물무침</p>
+      <p><strong>저녁:</strong> 돈까스, 스파게티, 단무지, 양파샐러드</p>
+      <a class="pay-button" href="payment.html">💳 결제하러 가기</a>
+    </div>
+  </div>
+  <footer>
+    ⓒ 오늘의 학식 - 정세아
+  </footer>
+</body>
+</html>

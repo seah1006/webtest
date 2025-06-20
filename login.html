@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 - 오늘의 학식</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1c3d5a;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo img {
+      width: 48px;
+      height: auto;
+    }
+    .main-content {
+      flex: 1;
+      max-width: 400px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 24px;
+      color: #1c3d5a;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      background-color: #3aafa9;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #319d94;
+    }
+    .back-button {
+      display: block;
+      margin: 20px auto 0;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: #3aafa9;
+    }
+    footer {
+      background-color: #1c3d5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="오늘의 학식 로고">
+    </div>
+  </header>
+  <div class="main-content">
+    <h2>🔐 로그인</h2>
+    <form>
+      <label for="username">아이디</label>
+      <input type="text" id="username" name="username" placeholder="아이디 입력">
+
+      <label for="password">비밀번호</label>
+      <input type="password" id="password" name="password" placeholder="비밀번호 입력">
+
+      <button type="submit">로그인</button>
+    </form>
+    <a href="index.html" class="back-button">← 메인으로</a>
+  </div>
+  <footer>
+    Ⓣ 오늘의 학식 - 정세아
+  </footer>
+</body>
+</html>

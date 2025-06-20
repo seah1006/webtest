@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>결제하기 - 오늘의 학식</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1c3d5a;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo img { width: 48px; height: auto; }
+    .main-content {
+      flex: 1;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .main-box {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.06);
+    }
+    h2 {
+      font-size: 26px;
+      color: #1c3d5a;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin: 20px 0 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 20px 10px 0;
+      background-color: #3aafa9;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background-color: #319d94;
+    }
+    footer {
+      background-color: #1c3d5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="오늘의 학식 로고">
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="main-box">
+      <h2>💳 식단 결제</h2>
+      <form action="payment_success.html">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="date">결제 날짜</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="menu">식단 선택</label>
+        <select id="menu" name="menu">
+          <option value="lunch">점심</option>
+          <option value="dinner">저녁</option>
+        </select>
+
+        <input type="submit" class="btn" value="결제하기">
+      </form>
+      <a href="index.html" class="btn" style="background-color:#6c757d;">🏠 메인으로 돌아가기</a>
+    </div>
+  </div>
+  <footer>
+    ⓒ 오늘의 학식 - 정세아
+  </footer>
+</body>
+</html>

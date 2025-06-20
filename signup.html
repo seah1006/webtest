@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입 - 오늘의 학식</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #1c3d5a;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .back-button {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: normal;
+    }
+    .back-button:hover {
+      text-decoration: underline;
+    }
+    .signup-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .signup-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1c3d5a;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .sms-wrap {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .sms-wrap input {
+      flex: 1;
+    }
+    .sms-wrap button {
+      padding: 12px;
+      background-color: #607d8b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    label {
+      font-size: 14px;
+    }
+    .terms {
+      margin: 20px 0;
+    }
+    .terms label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    button[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #3aafa9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button[type="submit"]:hover {
+      background-color: #338e89;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1c3d5a;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">← 메인으로</a>
+    회원가입
+    <span></span>
+  </header>
+
+  <div class="signup-container">
+    <form class="signup-box">
+      <h2>계정을 만들어보세요</h2>
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+      <input type="text" placeholder="아이디" required>
+      <input type="password" placeholder="비밀번호" required>
+      <input type="password" placeholder="비밀번호 확인" required>
+
+      <div class="sms-wrap">
+        <input type="tel" placeholder="휴대폰 번호" required>
+        <button type="button">인증번호 전송</button>
+      </div>
+
+      <input type="text" placeholder="인증번호 입력" required>
+
+      <div class="terms">
+        <label><input type="checkbox" required> [필수] 이용약관 및 개인정보 수집에 동의합니다.</label>
+        <label><input type="checkbox"> [선택] 이벤트 및 광고성 정보 수신에 동의합니다.</label>
+      </div>
+
+      <button type="submit">회원가입</button>
+    </form>
+  </div>
+
+  <footer>
+    ⓒ 오늘의 학식 - 정세아
+  </footer>
+</body>
+</html>
